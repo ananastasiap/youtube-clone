@@ -74,6 +74,13 @@
         border: none;
         cursor: pointer;
         margin-left: 8px;
+        transition: opacity 0.15s;
+    }
+    .uber:hover {
+        opacity: 0.8;
+    }
+    .uber:active {
+        opacity: 0.4;
     }
 
     .amazon {
@@ -86,6 +93,14 @@
         border-radius: 15px;
         margin-left: 8px;
         cursor: pointer;
+        transition: background-color 0.15s;
+    }
+
+    .amazon:hover {
+        background-color: rgb(233, 196, 14);
+    }
+    .amazon:active {
+        background-color: rgb(255, 216, 20);
     }
 
     .github {
@@ -100,6 +115,14 @@
         margin-left: 8px;
         margin-top: 8px;
         cursor: pointer;
+        transition: box-shadow 0.15s;
+    }
+
+    .github:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    .github:active {
+        box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
     }
 
     .bootstrap-1 {
@@ -112,7 +135,16 @@
         border-radius: 3px;
         margin-top: 8px;
         cursor: pointer;
+        transition: background-color 0.15s;
     }
+
+    .bootstrap-1:hover {
+        background-color: rgb(94, 63, 139);
+    }
+    .bootstrap-1:active {
+        background-color: rgb(121, 82, 179);
+    }
+
     .bootstrap-2 {
         background-color: white;
         color: rgb(108, 117, 125);
@@ -126,6 +158,17 @@
         margin-left: 8px;
         cursor: pointer;
         border-style: solid;
+        transition: background-color 0.15s,
+                    color 0.15s;
+    }
+
+    .bootstrap-2:hover {
+        background-color: rgb(108, 117, 125);
+        color: white;
+    }
+    .bootstrap-2:active {
+        background-color: white;
+        color: rgb(108, 117, 125);
     }
 
     .linkedin-1 {
@@ -138,7 +181,16 @@
         border-radius: 15px;
         margin-top: 8px;
         cursor: pointer;
+        transition: background-color 0.15s;
     }
+
+    .linkedin-1:hover {
+        background-color: rgb(7, 79, 150);
+    }
+    .linkedin-1:active {
+        background-color: rgb(10, 102, 194);
+    }
+
     .linkedin-2 {
         background-color: white;
         color:rgb(10, 102, 194);
@@ -150,6 +202,17 @@
         margin-top: 8px;
         margin-left: 8px;
         cursor: pointer;
+        transition: border 0.15s,
+                    background-color 0.15s;
+    }
+
+    .linkedin-2:hover {
+        border: solid rgb(10, 102, 194) 2px;
+        background-color:rgb(211, 231, 251)
+    }
+    .linkedin-2:active {
+        border: solid rgb(10, 102, 194) 1px;
+        background-color: white;
     }
 </style>
 
