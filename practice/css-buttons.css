@@ -2,12 +2,21 @@
   background-color: #bd1313;
   color: white;
   border: none;
-  height: 35px;
-  width: 110px;
+
+  /* Фиксированный размер */
+  /* height: 35px;
+  width: 110px; */
+
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   text-transform: uppercase;
   border-radius: 2px;
   cursor: pointer;
   transition: opacity 0.15s;
+  vertical-align: top;
 }
 
 .subscribe:hover {
@@ -24,14 +33,19 @@ opacity: 0.5;
   border-style: solid;
   border-radius: 2px;
   border-width: 1px;
-  height: 35px;
-  width: 65px;
+
+  /* height: 35px;
+  width: 65px; */
+
+  padding: 9px 16px;
+
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 8px;
   transition: background-color 0.15s,
               color 0.15s,
               opacity 0.15s;
+  vertical-align: top;
 }
 
 .join:hover {
@@ -48,12 +62,17 @@ opacity: 0.7;
   border: none;
   font-weight: bold;
   font-size: 15px;
-  height: 30px;
-  width: 75px;
+
+  /* height: 30px;
+  width: 75px; */
+
+  padding: 8px 16px;
+
   border-radius: 25px;
   cursor: pointer;
   margin-left: 8px;
   transition: box-shadow 0.15s;
+  vertical-align: top;
 }
 
 .tweet:hover {
@@ -68,12 +87,17 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   background-color: black;
   color: white;
   font-size: 10px;
-  height: 27px;
-  width: 82px;
+
+  /* height: 27px;
+  width: 82px; */
+
+  padding: 12px 15px;
+
   border: none;
   cursor: pointer;
   margin-left: 8px;
   transition: opacity 0.15s;
+  vertical-align: top;
 }
 .uber:hover {
   opacity: 0.8;
@@ -87,12 +111,17 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   color: black;
   font-size: 15px;
   border: none;
-  height: 28px;
-  width: 160px;
+
+  /* height: 28px;
+  width: 160px; */
+
+  padding: 7px 55px;
+
   border-radius: 15px;
   margin-left: 8px;
   cursor: pointer;
   transition: background-color 0.15s;
+  vertical-align: top;
 }
 
 .amazon:hover {
@@ -107,14 +136,19 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   color: white;
   font-weight: bold;
   font-size: 13px;
-  height: 29px;
-  width: 75px;
+
+  /* height: 29px;
+  width: 75px; */
+
+  padding: 12px 17px;
+
   border: none;
   border-radius: 4px;
   margin-left: 8px;
   margin-top: 8px;
   cursor: pointer;
   transition: box-shadow 0.15s;
+  vertical-align: top;
 }
 
 .github:hover {
@@ -128,13 +162,18 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   background-color: rgb(121, 82, 179);
   color: white;
   font-weight: bold;
-  height: 32px;
-  width: 105px;
+
+  /* height: 32px;
+  width: 105px; */
+
+  padding: 12px 20px;
+
   border: none;
   border-radius: 3px;
   margin-top: 8px;
   cursor: pointer;
   transition: background-color 0.15s;
+  vertical-align: top;
 }
 
 .bootstrap-1:hover {
@@ -148,8 +187,12 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   background-color: white;
   color: rgb(108, 117, 125);
   font-weight: bold;
-  height: 32px;
-  width: 95px;
+
+  /* height: 32px;
+  width: 95px; */
+
+  padding: 11px 19px;
+
   border-color: rgb(108, 117, 125);
   border-width: 1px;
   border-radius: 3px;
@@ -159,6 +202,7 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   border-style: solid;
   transition: background-color 0.15s,
               color 0.15s;
+  vertical-align: top;
 }
 
 .bootstrap-2:hover {
@@ -174,13 +218,18 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   background-color: rgb(10, 102, 194);
   color: white;
   font-weight: bold;
-  height: 30px;
-  width: 213px;
+
+  /* height: 30px;
+  width: 213px; */
+
+  padding: 7px 28px;
+
   border: none;
   border-radius: 15px;
   margin-top: 8px;
   cursor: pointer;
   transition: background-color 0.15s;
+  vertical-align: top;
 }
 
 .linkedin-1:hover {
@@ -194,8 +243,9 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   background-color: white;
   color:rgb(10, 102, 194);
   font-weight: bold;
-  height: 30px;
-  width: 75px;
+
+  padding: 6px 25px;
+
   border: solid rgb(10, 102, 194) 1px;
   border-radius: 15px;
   margin-top: 8px;
@@ -203,6 +253,7 @@ box-shadow: 5px 5px 10px rgba(124, 83, 83, 0.15);
   cursor: pointer;
   transition: border 0.15s,
               background-color 0.15s;
+  vertical-align: top;
 }
 
 .linkedin-2:hover {

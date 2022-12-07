@@ -1,2 +1,2 @@
 # youtube-clone
-YouTube.com clone website
+YouTube.com mane page clone

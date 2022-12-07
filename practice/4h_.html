@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4h+</title>
+
+  <style>
+
+  /* PAGINATION */
+  .button {
+    background-color: rgb(209, 205, 205);
+    color: black;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 16px;
+
+    padding: 10px 8px;
+
+    border: solid black 1px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .back {
+    margin-right: 8px;
+  }
+  .next {
+    margin-left: 8px;
+  }
+  .page_ {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 18px;
+  }
+
+  /* STRETCH */
+  .stretch {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin-top: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: padding 1s;
+  }
+
+  .stretch:hover {
+    padding: 16px 35px;
+  }
+
+  /* 3D Click */
+  .shadow {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin-top: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.707);
+  }
+
+  .shadow:active {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    box-shadow: none;
+  }
+
+  /* MARGIN and PADDING */
+  .num {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: padding-left 0.3s,
+                padding-right 0.3s,
+                margin 0.3s;
+  }
+
+  .num:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  </style>
+
+</head>
+<body>
+  <!-- ! PAGINATION -->
+  <h2 style="text-align: center;">Pagination</h2>
+  <button class="button back">Back</button>
+  <a href="google.com" class="page_">1</a>
+  <a href="google.com" class="page_">2</a>
+  <a href="google.com" class="page_">3</a>
+  <a href="google.com" class="page_">4</a>
+  <a href="google.com" class="page_">5</a>
+  <button class="button next">Next</button>
+
+  <br>
+
+  <!-- ! STRETCH -->
+  <h2 style="text-align: center;">Stretch</h2>
+  <button class="stretch">Stretch</button>
+
+  <br>
+
+  <!-- ! 3D Click -->
+  <h2 style="text-align: center;">Shadow</h2>
+  <button class="shadow">Shadow</button>
+
+  <br>
+
+  <!-- ! MARGIN and PADDING -->
+  <h2 style="text-align: center;">Margin and Padding</h2>
+  <button class="num">One</button>
+  <button class="num">Two</button>
+  <button class="num">Three</button>
+</body>
+</html>
