@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding-top: 80px;
+  padding-left: 80px;
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -132,6 +133,15 @@ p {
   border-radius: 16px;
 }
 
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 72px;
+}
+
 /* ! main */
 
 .videos {
@@ -149,6 +159,7 @@ p {
 
 .container__preview-pic {
   margin-bottom: 12px;
+  position: relative;
 }
 
 .preview-pic {
@@ -158,6 +169,19 @@ p {
   /* object-fit: cover;
   object-position: left; */
   /* display: block; */
+}
+
+.video__time {
+  background-color: #000000e6;
+  color: white;
+  position: absolute;
+  right: 4px;
+  bottom: 7px;
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .container__icon-pic {

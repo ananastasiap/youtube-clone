@@ -4,7 +4,8 @@
     <title>Positon Practice</title>
   </head>
   <body style="height: 3000px;
-               padding-top: 60px;">
+               padding-top: 60px;
+               padding-left: 80px;">
     <div style="
                 background-color: black;
                 color: white;
@@ -19,7 +20,40 @@
                 bottom: 200px; */
 
                 height: 50px;
+                /* где индекс выше, то будет распологаться
+                слоем выше */
+                z-index: 1;
     ">header</div>
+
+    <div style="
+                background-color: lightgreen;
+                position: fixed;
+                top: 50px;
+                bottom: 0;
+                left: 0;
+                width: 72px;"
+    >sidebar
+
+      <div style="
+                  background-color: red;
+                  color: white;
+                  position: absolute;
+                  right: 0;
+                  top: 0;"
+      >x</div>
+
+  </div>
+
+    <div style="
+                background-color: red;
+                color: white;
+                /* SAME AS FIXED BUT TOWARDS SPECIAL PART
+                below an element? it will be above it,
+                как слой наложится спереди */
+                position: absolute;
+                right: 10px;
+                top: 60px;"
+    >absolute</div>
 
     <div style="
                 background-color: lightblue;
@@ -32,6 +66,17 @@
                 background-color: lightpink;
                 height: 200px;
                 width: 200px;
-    ">div 2</div>
+                position: relative;
+    ">div 2
+
+    <div style="
+                background-color: red;
+                color: white;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;"
+    >5:00</div>
+  </div>
+
   </body>
 </html>

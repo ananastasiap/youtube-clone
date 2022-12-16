@@ -1,268 +1,308 @@
+<!-- С хэдером проверить, чтобы не терялись, z-index -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube.com Clone</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube.com Clone</title>
 
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
 
-<body>
+  <body>
 
-  <div class="header">
-    <div class="left-section">
-      <img src="./images/icons/hamburger-menu.svg"
-           alt="Hamburger Menu"
-           class="hamburger-menu" />
+    <div class="header">
+      <div class="left-section">
+        <img src="./images/icons/hamburger-menu.svg"
+            alt="Hamburger Menu"
+            class="hamburger-menu" />
 
-      <img src="./images/icons/youtube-logo.svg"
-           alt="YouTube Logo"
-           class="youtube-logo" />
-    </div>
-
-    <div class="middle-section">
-      <input class="search"
-             type="text"
-             placeholder="Search" />
-      <button class="search-btn">
-        <img src="./images/icons/search.svg"
-             alt="Search"
-             class="search-image" />
-      </button>
-      <button class="voice-search-bnt">
-        <img src="./images/icons/voice-search-icon.svg"
-             alt="Voice search"
-             class="voice-search-img" />
-      </button>
-    </div>
-
-    <div class="right-section">
-      <img src="./images/icons/upload.svg" alt="Upload"
-           class="upload-img">
-      <img src="./images/icons/youtube-apps.svg" alt="YouTube Apps"
-           class="apps-img">
-      <img src="./images/icons/notifications.svg" alt="Notifications"
-           class="notif-img">
-      <img src="./images/icons/user-logo.png" alt="User Icon"
-           class="user-logo">
-    </div>
-  </div>
-
-
-  <div class="videos">
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/hq720.webp" alt="HBO Last of US Preview">
+      <div class="sidebar">
+        sidebar
       </div>
 
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/hbo-icon.jpg" alt="HBO icon">
-        </div>
+        <img src="./images/icons/youtube-logo.svg"
+            alt="YouTube Logo"
+            class="youtube-logo" />
+      </div>
 
-        <div class="container__video-info">
-          <p class="video-title">The Last of Us | Official Trailer | HBO Max</p>
-          <p class="video-author">HBO Max</p>
-          <p class="video-stats">1,69M views &#183; 1 month ago</p>
-        </div>
+      <div class="middle-section">
+        <input class="search"
+              type="text"
+              placeholder="Search" />
+        <button class="search-btn">
+          <img src="./images/icons/search.svg"
+              alt="Search"
+              class="search-image" />
+        </button>
+        <button class="voice-search-bnt">
+          <img src="./images/icons/voice-search-icon.svg"
+              alt="Voice search"
+              class="voice-search-img" />
+        </button>
+      </div>
+
+      <div class="right-section">
+        <img src="./images/icons/upload.svg" alt="Upload"
+            class="upload-img">
+        <img src="./images/icons/youtube-apps.svg" alt="YouTube Apps"
+            class="apps-img">
+        <img src="./images/icons/notifications.svg" alt="Notifications"
+            class="notif-img">
+        <img src="./images/icons/user-logo.png" alt="User Icon"
+            class="user-logo">
       </div>
     </div>
 
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/devil-in-me.webp" alt="Devil In Me Verdict Preview">
+
+    <div class="videos">
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/hq720.webp" alt="HBO Last of US Preview">
+          <div class="video__time">
+            2:24
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/hbo-icon.jpg" alt="HBO icon">
+          </div>
+
+          <div class="container__video-info">
+            <p class="video-title">The Last of Us | Official Trailer | HBO Max</p>
+            <p class="video-author">HBO Max</p>
+            <p class="video-stats">1,69M views &#183; 1 month ago</p>
+          </div>
+        </div>
       </div>
 
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/gamebolt-icon.jpg" alt="GameBolt icon">
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/devil-in-me.webp" alt="Devil In Me Verdict Preview">
+          <div class="video__time">
+            8:02
+          </div>
         </div>
-        <div class="container__video-info">
-          <p class="video-title">The Devil in Me Review - The Final Verdict</p>
-          <p class="video-author">GamingBolt</p>
-          <p class="video-stats">28K views &#183; 2 weeks ago</p>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/gamebolt-icon.jpg" alt="GameBolt icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">The Devil in Me Review - The Final Verdict</p>
+            <p class="video-author">GamingBolt</p>
+            <p class="video-stats">28K views &#183; 2 weeks ago</p>
+          </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/expressions-about-secrets.webp" alt="20 Expressions about Secrets Preview">
+          <div class="video__time">
+            11:50
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/adam-eng-icon.jpg" alt="Adam's English icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">Learn English: 20 Expressions about Secrets</p>
+            <p class="video-author">Adam's English Lessons &#183; engVid</p>
+            <p class="video-stats">8.4K views &#183; 1 day ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/dog-and-bath.webp" alt="Dog's First Bath Preview">
+          <div class="video__time">
+            14:06
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/jenna-marbles-icon.jpg" alt="Jenna Marbles icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">Bunny's First Bath</p>
+            <p class="video-author">JennaMarbles</p>
+            <p class="video-stats">4.6M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/winston-and-hovard-preview.webp" alt="Rescued Dog Preview">
+          <div class="video__time">
+            3:17
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/hope-for-paws-icon.jpg" alt="Hope For Paws icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">From life on the streets, to life on the beach!!! 🐶👍🐶👍</p>
+            <p class="video-author">Hope For Paws - Official Rescue Channel</p>
+            <p class="video-stats">109K views &#183; 5 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/last-christmas-cover.webp" alt="Last Christmas (Instrumental Bardcore) Preview">
+          <div class="video__time">
+            4:55
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/@Hildegardvonblingin-icon.jpg" alt="Hildegard von Blingin' icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">Last Christmas (Instrumental Bardcore | Medieval Style Cover)</p>
+            <p class="video-author">Hildegard von Blingin'</p>
+            <p class="video-stats">25K views &#183; 7 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/games-tricked-us.webp" alt="10 Times Games Tricked Us Preview">
+          <div class="video__time">
+            11:41
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/gameranx-icon.jpg" alt="gameranx icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">10 Times Games Tricked Us Into STRESSING OUT</p>
+            <p class="video-author">gameranx</p>
+            <p class="video-stats">569K views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/AI-change-the-world.webp" alt="AI change the world Preview">
+          <div class="video__time">
+            5:56
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/TED-Ed-icon.jpg" alt="TED-Ed icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">How will AI change the world?</p>
+            <p class="video-author">TED-Ed</p>
+            <p class="video-stats">84K views &#183; 16 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/strange-man-baby-fake.webp" alt="Baby Francis Sinclair is a Doll Preview">
+          <div class="video__time">
+            6:44
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/strange-man-icon.jpg" alt="Strange Man icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">Baby Francis Sinclair is a Doll | New Discovery (Red Dead Redemption 2)</p>
+            <p class="video-author">Strange Man</p>
+            <p class="video-stats">126K views &#183; 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/developedbyed.webp" alt="Preview of React Portfolio">
+          <div class="video__time">
+            56:17
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/developedbyed-icon.jpg" alt="developedbyed icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">Build a React Portfolio Website With Tailwind Tutorial</p>
+            <p class="video-author">developedbyed</p>
+            <p class="video-stats">199K views &#183; 2 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/lan-schl.webp" alt="Learn CSS Animation by Building Preview">
+          <div class="video__time">
+            19:35
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/schlangen-icon.jpg" alt="Landon Schlangen icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">Learn CSS Animation by Building a Ferris Wheel | FreeCodeCamp</p>
+            <p class="video-author">Landon Schlangen</p>
+            <p class="video-stats">30 views &#183; 2 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__preview-pic">
+          <img class="preview-pic" src="./images/thomas-müntzer.webp" alt="Thomas Müntzer Preview">
+          <div class="video__time">
+            16:59
+          </div>
+        </div>
+
+        <div class="container__info-grid">
+          <div class="container__icon-pic">
+            <img class="icon-pic" src="./images/icons/terra-x-icon.jpg" alt="Terra X icon">
+          </div>
+          <div class="container__video-info">
+            <p class="video-title">Thomas Müntzer - Freiheitskämpfer oder Fanatiker? | Terra X</p>
+            <p class="video-author">Terra X</p>
+            <p class="video-stats">118K views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/expressions-about-secrets.webp" alt="20 Expressions about Secrets Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/adam-eng-icon.jpg" alt="Adam's English icon">
-        </div>
-        <div class="container__video-info">
-          <p class="video-title">Learn English: 20 Expressions about Secrets</p>
-          <p class="video-author">Adam's English Lessons &#183; engVid</p>
-          <p class="video-stats">8.4K views &#183; 1 day ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/dog-and-bath.webp" alt="Dog's First Bath Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/jenna-marbles-icon.jpg" alt="Jenna Marbles icon">
-        </div>
-        <div class="container__video-info">
-          <p class="video-title">Bunny's First Bath</p>
-          <p class="video-author">JennaMarbles</p>
-          <p class="video-stats">4.6M views &#183; 2 years ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/winston-and-hovard-preview.webp" alt="Rescued Dog Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/hope-for-paws-icon.jpg" alt="Hope For Paws icon">
-        </div>
-        <div class="container__video-info">
-          <p class="video-title">From life on the streets, to life on the beach!!! 🐶👍🐶👍</p>
-          <p class="video-author">Hope For Paws - Official Rescue Channel</p>
-          <p class="video-stats">109K views &#183; 5 days ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/last-christmas-cover.webp" alt="Last Christmas (Instrumental Bardcore) Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/@Hildegardvonblingin-icon.jpg" alt="Hildegard von Blingin' icon">
-        </div>
-        <div class="container__video-info">
-          <p class="video-title">Last Christmas (Instrumental Bardcore | Medieval Style Cover)</p>
-          <p class="video-author">Hildegard von Blingin'</p>
-          <p class="video-stats">25K views &#183; 7 hours ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/games-tricked-us.webp" alt="10 Times Games Tricked Us Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/gameranx-icon.jpg" alt="gameranx icon">
-        </div>
-        <div class="container__video-info">
-          <p class="video-title">10 Times Games Tricked Us Into STRESSING OUT</p>
-          <p class="video-author">gameranx</p>
-          <p class="video-stats">569K views &#183; 1 month ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/AI-change-the-world.webp" alt="AI change the world Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/TED-Ed-icon.jpg" alt="TED-Ed icon">
-        </div>
-        <div class="container__video-info">
-          <p class="video-title">How will AI change the world?</p>
-          <p class="video-author">TED-Ed</p>
-          <p class="video-stats">84K views &#183; 16 hours ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/strange-man-baby-fake.webp" alt="Baby Francis Sinclair is a Doll Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/strange-man-icon.jpg" alt="Strange Man icon">
-        </div>
-        <div class="container__video-info">
-          <p class="video-title">Baby Francis Sinclair is a Doll | New Discovery (Red Dead Redemption 2)</p>
-          <p class="video-author">Strange Man</p>
-          <p class="video-stats">126K views &#183; 2 weeks ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/developedbyed.webp" alt="Preview of React Portfolio">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/developedbyed-icon.jpg" alt="developedbyed icon">
-        </div>
-        <div class="container__video-info">
-          <p class="video-title">Build a React Portfolio Website With Tailwind Tutorial</p>
-          <p class="video-author">developedbyed</p>
-          <p class="video-stats">199K views &#183; 2 months ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/lan-schl.webp" alt="Learn CSS Animation by Building Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/schlangen-icon.jpg" alt="Landon Schlangen icon">
-        </div>
-
-        <div class="container__video-info">
-          <p class="video-title">Learn CSS Animation by Building a Ferris Wheel | FreeCodeCamp</p>
-          <p class="video-author">Landon Schlangen</p>
-          <p class="video-stats">30 views &#183; 2 days ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="container__preview-pic">
-        <img class="preview-pic" src="./images/thomas-müntzer.webp" alt="Thomas Müntzer Preview">
-      </div>
-
-      <div class="container__info-grid">
-        <div class="container__icon-pic">
-          <img class="icon-pic" src="./images/icons/terra-x-icon.jpg" alt="Terra X icon">
-        </div>
-
-        <div class="container__video-info">
-          <p class="video-title">Thomas Müntzer - Freiheitskämpfer oder Fanatiker? | Terra X</p>
-          <p class="video-author">Terra X</p>
-          <p class="video-stats">118K views &#183; 3 months ago</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</body>
+  </body>
 </html>
