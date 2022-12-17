@@ -2,7 +2,9 @@
 body {
   margin: 0;
   padding-top: 80px;
-  padding-left: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color:rgb(248, 248, 248);
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -91,9 +93,50 @@ p {
   margin-right: 10px;
 }
 
+.search-btn,
+.voice-search-bnt,
+.upload-icon-container,
+.youtube-apps-container,
+.notification {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn .tooltip,
+.voice-search-bnt .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notification .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 9px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -40px;
+
+  opacity: 0;
+  transition: opacity 0.15s;
+  /* при наведении на тултип не будет показывает его
+  только при наведении на кнопу */
+  pointer-events: none;
+
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.voice-search-bnt:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notification:hover .tooltip {
+  opacity: 1;
+}
+
 .search-image {
   width: 24px;
-  margin-top: 4px;
 }
 
 .voice-search-bnt {
@@ -104,9 +147,12 @@ p {
   background-color:#f8f8f8;
 }
 
+.voice-search-bnt .tooltip {
+  position: absolute;
+}
+
 .voice-search-img {
   height: 24px;
-  margin-top: 4px;
 }
 
 .right-section {
@@ -160,6 +206,32 @@ p {
   top: 55px;
   background-color: white;
   width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link {
+  height: 74px;
+  margin-bottom: 1px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-link:hover {
+  background-color: #ebebeb;
+}
+
+.sidebar-link img {
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar-link p {
+  font-size: 10px;
 }
 
 /* ! main */
@@ -178,7 +250,7 @@ p {
 } */
 
 .container__preview-pic {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -189,6 +261,7 @@ p {
   /* object-fit: cover;
   object-position: left; */
   /* display: block; */
+
 }
 
 .video__time {
@@ -209,7 +282,7 @@ p {
 }
 
 .icon-pic {
-  width: 40px;
+  width: 36px;
   border-radius: 50px;
 }
 
@@ -235,3 +308,4 @@ p {
 .video-author {
   margin-bottom: 4px;
 }
+
