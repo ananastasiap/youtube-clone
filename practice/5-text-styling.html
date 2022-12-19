@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styles</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        display: grid;
+        gap: 50px 60px;
+        margin-top: 20px;
+        margin-left: 20px;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .chivo-mono {
+        font-weight: bold;
+        font-family: 'Chivo Mono', monospace;
+        border: 2px solid lightgreen;
+        width: 360px;
+        padding: 5px 8px;
+      }
+
+      .arial {
+        width: 330px;
+        padding: 10px 15px;
+        font-family: Arial, sans-serif;
+        border: 2px solid lightgreen;
+      }
+      .arial h2 {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .arial p {
+        color: red;
+        font-style: italic;
+      }
+
+      .verdana {
+        width: 280px;
+        padding: 6px 8px 10px 8px;
+        border: 2px solid lightgreen;
+        font-family: Verdana, sans-serif;
+      }
+      .verdana h2 {
+        font-size: 18px;
+      }
+      .sub-title {
+        font-size: 14px;
+        color: #b5adad;
+        margin-bottom: 10px;
+      }
+      .text-verdana {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+      .verdana button {
+        border: none;
+        color: #ffffff;
+        padding: 7px 12px;
+        border-radius: 4px;
+        text-transform: capitalize;
+        background-color: #239523;
+      }
+      .verdana button:hover {
+        color: #239523;
+        font-weight: bold;
+        border: 2px solid #239523;
+        background-color: #ffffff;
+      }
+
+      .arial-1 {
+        width: 400px;
+        padding: 10px 15px;
+        text-align: center;
+        border: 2px solid lightgreen;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .arial-1 h2 {
+        font-weight: bold;
+      }
+      .arial-1 p {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .arial-1 a {
+        font-size: 14px;
+        color: #3939d5;
+        text-decoration: none;
+      }
+
+      .arial-1 a:hover {
+        font-size: 16px;
+        color: #2525cb;
+        font-weight: bold;
+      }
+    </style>
+
+    <div class="wrapper">
+      <!-- 5a -->
+      <h2 class="chivo-mono">This is Chivo Mono Font</h2>
+      <!-- 5b -->
+      <div class="arial">
+        <h2>Biggest Deals of the Year!</h2>
+        <p>Sales end Tuesday</p>
+      </div>
+      <!-- 5c -->
+      <div class="verdana">
+        <h2>HTML CSS Course</h2>
+        <p class="sub-title">Beginner to Pro</p>
+        <p class="text-verdana">In this course, we'll learn the skills
+          you need to become a developer.
+        </p>
+        <button>get started</button>
+      </div>
+      <!-- 5d -->
+      <div class="arial-1">
+        <h2>Shopping for your business?</h2>
+        <p>See how Apple at Work can help</p>
+        <a href="#" target="_blank">Learn more &#62;</a>
+      </div>
+    </div>
+
+    <div class="challenge">
+        <!-- 5e -->
+        <!-- 5f -->
+        <!-- 5g -->
+    </div>
+  </body>
+</html>
