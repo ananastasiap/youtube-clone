@@ -12,6 +12,10 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 .search {
   font-size: 20px;
