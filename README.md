@@ -5,7 +5,7 @@
 
 YouTube.com mane page old version clone.
 
-A small tutorial project introducing the basics of CSS and HTML.
+A small educational project introducing the basics of CSS and HTML.
 
 <br>
 
